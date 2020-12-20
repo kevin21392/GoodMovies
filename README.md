@@ -3,6 +3,7 @@
 Good Movies v1.0 
 
 ----------------
+Dear Everyone,
 
 Welcome! Here is a simple web application that displays a list of movies and why they are good. Anyone can add, edit or delete the movies using this interface. This simple app was created to demonstrate how a REST api can be used to serve data to the front end.
 
@@ -10,3 +11,9 @@ The interface was built with HTML, CSS, and JavaScipt to create a universal, mob
 
 As far as the backend API service, I have this connected to my hosted app on my website. This REST API is powered by Ruby on Rails running through Passenger on a LInux VPS. Ruby on Rails works great because of the speed in which you can create REST APIs. I have used Spring Boot and Java to create REST Apis in the past, but I like using Ruby on Rails better because of the speed, effectiveness, and scalability. I see myself using Rails in the future for more projects, although I'd be able to use other methods, too. I have never used Node and Express to create these API's, but I would be able to learn if necessary.
 
+This is my first Git repository and I would like to gain more experience using this tool with future projects of mine. Feel free to leave comments and push me into the right direction. I want to become part of the community to contribute to various projects!
+
+Enjoy my this app and any others that I have on here!
+
+Thank you,
+Kevin
