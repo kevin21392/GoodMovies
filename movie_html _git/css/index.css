@@ -1,0 +1,479 @@
+h1 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input  {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pageContainer {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headerBar {
+    background-color: #000033;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+	height: 50px;
+	width: 150px;
+	align-items: center;
+}
+
+.headerBar h1 {
+	font-weight: normal;
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.headerBar img {
+    margin-right: 15px;
+}
+.sample {
+	width:230px;
+	height:230px;
+	z-index: 3;
+    background-color: #000033;
+    border: 5px solid #339999;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+	color: white;
+	
+}
+.main {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.collectionUL {
+    list-style-type: none;
+}
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+}
+
+.addButton {
+	width: 30px;
+	margin: 3px;
+	cursor: pointer;
+}
+.addButton:hover {
+	cursor: pointer;
+}
+
+.editButton {
+	width: 23px;
+	cursor: pointer;
+	position: relative;
+	top: -4.5px;
+	right: -8px;
+}
+.editButton:hover {
+	cursor: pointer;
+}
+
+.deleteButton {
+	width: 23px;
+	padding: 3px;
+	cursor: pointer;
+	position: relative;
+	top: -3px;
+	right: -3px;
+}
+.deleteButton:hover {
+	cursor: pointer;
+}
+.buttons {
+	align-self: flex-end;
+	padding: 3px;
+}
+#bodyInfo h3 {
+	position: relative;
+	font-weight: 900;
+	text-align: center;
+	top: -25px;
+}
+
+#bodyInfo h4 {
+	position: relative;
+	text-align: left;
+	margin-left: 14px;
+	top: -30px;
+	font-size: 16px;
+	color: #339999;
+
+}
+#bodyInfo p {
+	position: relative;
+	padding-left: 10px;
+	text-align: left;
+	top: -25px;
+	font-size: 13px;
+	font-weight: light;
+}
+
+.collection {
+    align-self: center;
+    position: relative;
+	display: grid;
+	justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+	grid-gap: 10px;
+	width: 100%;
+}
+
+.hider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 70%;
+	
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.deleteBox {
+	z-index: 5;
+	position: absolute;
+	display: none;
+   left: 50%;
+   transform: translate(-50%, -40px);
+   font-family: "Sergoe UI";
+	font-size: 18px;
+	width: 375px;
+	height: 125px;
+	top: 75px;
+	padding: 15px;
+	border-radius: 10px;
+	border: 4px solid black;
+	background-color: white;
+	text-align: center;
+}
+
+.deleteBox h3 {
+	position: relative;
+	top: -12px;
+	
+}
+
+.addBox {
+	z-index: -2;
+	position: absolute;
+	display: inline;
+   left: 50%;
+   transform: translate(-50%, -40px);
+   font-family: "Sergoe UI";
+	font-size: 18px;
+	opacity:0;
+	width: 375px;
+	height: 315px;
+	top: 75px;
+	padding: 15px;
+	border-radius: 20px;
+	border: 4px solid black;
+	background-color: white;
+	text-align: center;
+	transition: opacity .5s ease-out;
+}
+
+.addBox h3 {
+	position: relative;
+	top: -12px;
+}
+
+.fields {
+	padding-left: 5spx;
+	text-align: left;
+	margin-top: -15px;
+}
+.formInputText {
+	margin: 6px;
+	border: 2px solid black;
+	padding: 5px;
+
+}
+.formTextArea {
+	border: 2px solid black;
+	resize: none;
+	width: 85%;
+	height: 80px;
+	margin: 6px;
+	padding: 5px;
+}
+.editFields {
+	padding-left: 5spx;
+	text-align: left;
+	margin-top: -15px;
+}
+.editFormInputText {
+	margin: 6px;border: 2px solid black;
+	padding: 5px;
+
+}
+.editFormTextArea {
+	border: 2px solid black;
+	resize: none;
+	width: 85%;
+	height: 95px;
+	margin: 6px;
+	padding: 5px;
+}
+.deleteButtons {
+	width: 95px;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid black;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.deleteButtons:hover {
+	width: 95px;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.deleteButtonsDiv {
+	position: relative;
+	top: -14px;
+	display: flex;
+	justify-content: center;
+}
+.addButtons {
+	width: 95px;
+	height: 23px;
+	color: black;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.addButtonsDis {
+	width: 95px;
+	color: gray;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid gray;
+	background-color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.addButtons:hover {
+	width: 95px;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.addButtonsDiv {
+	position: relative;
+	top: 18px;
+	display: flex;
+	justify-content: center;
+}
+.saveButton {
+	width: 95px;
+	height: 23px;
+	color: black;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.saveButton:hover {
+	width: 95px;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.editButtons {
+	width: 95px;
+	height: 23px;
+	color: black;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.editButtonsDis {
+	width: 95px;
+	color: gray;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid gray;
+	background-color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.editButtons:hover {
+	width: 95px;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.editButtonsDiv {
+	position: relative;
+	top: 10px;
+	display: flex;
+	justify-content: center;
+}
+.editSaveButton {
+	width: 95px;
+	height: 23px;
+	color: black;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.editSaveButton:hover {
+	width: 95px;
+	height: 23px;
+	border-radius: 13px;
+	border: 3px solid black;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.editFormText {
+	margin-left: 4px;
+	font-size: large;
+}
+
+@media screen and (min-width: 420px) {
+	.editFormTextArea {
+		height:50px;
+	}
+	.editFormText {
+		font-size: small;
+	}
+	.editButtonsDiv {
+		top: 0px;
+	}
+	.editButtons {
+		font-size: small;
+		height: 18px;
+		width: 80px;
+	}
+	.editButtonsDis {
+		font-size: small;
+		height: 18px;
+		width: 80px;
+	}
+	.editButtons:hover {
+		font-size: small;
+		height: 18px;
+		width: 80px;
+	}
+	.editSaveButton {
+		font-size: small;
+		height: 18px;
+		width: 80px;
+	}
+	.editSaveButton:hover {
+		font-size: small;
+		height: 18px;
+		width: 80px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.deleteBox {
+		width: 85%;
+		transform: translate(-50%, -50px);
+		height: 155px;
+	}
+	.addBox {
+		width: 85%;
+		transform: translate(-50%, 0);
+		height: 320px;
+	}
+	.sample {
+		width: 95%;
+		padding-bottom: 25%;
+	}
+	.sample h4 {
+		top: -35px;
+	}
+	.sample p {
+		margin-left: 7px;
+		font-size: 16px;
+		top: -50px;
+	}
+	.editButton {
+		width: 30px;
+	}
+	.deleteButton {
+		width: 30px;
+	}
+	.sample h3 {
+		font-size: 22px;
+	}
+	.addButton {
+		width: 40px;
+	}
+}

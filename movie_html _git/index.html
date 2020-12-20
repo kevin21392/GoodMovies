@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Movies</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="main">
+    <div class="hider"></div>
+    <div class="deleteBox">
+    	<h3>Are you sure you want to delete the movie called "Bad Santa"?</h3>
+    	<div class="deleteButtonsDiv">
+    	<div id="deleteYes" class="deleteButtons" onclick="deleteMovie(getDeleteID());">
+    	Yes
+    	</div>
+    	<div id="deleteNo" class="deleteButtons" onclick="deleteNo();">
+    	No
+    	</div>
+    	</div>
+    	<input type="hidden" id="movieToDelete" value="">
+    
+    </div>
+    <div class="addBox">
+        <h3>Add a new movie</h3>
+        <div class="addForm">
+    	
+            <div class="fields">
+            <label for="title" class="formText">Title:</label><br>
+            <input type="text" name="title" id="movieTitle" class="formInputText" onkeyup="validateForm();" autocomplete="off">
+            <br>
+            <label for="why" class="formText">Why is it a good movie?</label>
+            <br>
+            <textarea name="why" id="movieWhy" class="formTextArea" onkeyup="validateForm();"></textarea>
+            </div>
+            <div class="addButtonsDiv">
+            <div id="saveButton" class="addButtonsDis" type="button" value="Save" onclick="">Save</div>
+            <div id="cancelButton" class="addButtons" type="button" value="Cancel" onclick="cancelAdd();">Cancel</div>
+            </div>
+        
+        </div>
+    	</div>
+    
+    </div>
+    <div class="pageContainer">
+        <div class="headerContainer">
+            <div class="headerBar">
+                <h1>Good Movies</h1>
+                
+                
+            </div>
+        </div>
+        
+        <div class="homeContainer">
+        <div class="addButtonSpacer">
+        	<img id="addButton" class="addButton" src="images/addButton.svg" onmouseover="this.src='images/addHover.svg'" onmouseout="this.src='images/addButton.svg'" onclick="addScreen();" alt="Add new movie">
+        </div>
+            <div class="collection" id="collection">
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
